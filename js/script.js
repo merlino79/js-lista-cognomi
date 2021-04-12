@@ -1,3 +1,12 @@
+//chiedere all'utente il cognome
+//iserirlo in un array
+//stampa la lista ordinata alfabeticamente
+//scrivi la posizione umana partendo da 1 della lista in cui il nuovo utente si trova
+
+
+
+
+
 //creazione lista 
 var cognomi = [
     "ciancio",
@@ -8,15 +17,18 @@ var cognomi = [
     "deblasi",
     "perlina",
     "rossi",
-    "ciancio paratore"
+    "ciancio paratore",
+    "bianchi",
+    "verdi",
+    "balestreri",
+
 ];
 
+//chiedere il cognome
+
+//var cognomi = prompt("inserire il vs cognome");
+
+
 console.log(cognomi);
-console.log(cognomi.length - 1);
-
-
-for (i = 0; i < cognomi.length; i++) {
-    var surname = cognomi[i]
-    console.log(surname)
-
-}
+surname = cognomi.sort();
+console.log(surname);
