@@ -25,22 +25,46 @@ var cognomi = [
 ];
 
 //chiedere il cognome
-
-//var cognomi = prompt("inserire il vs cognome");
-
-
-// var cognomi = 0;
-// console.log(cognomi[numero]);
-
+var cognomi = prompt("inserire il vs cognome");
 console.log(cognomi);
-surname = cognomi.sort();
-console.log(surname);
+//console.log(cognomi[4]);
+
+var cognomi = [];
 
 
 
-var contenuto_precendente = document.getElementById('lista').innerHTML;
+cognomi.sort();
+console.log(cognomi);
 
-document.getElementById('lista').innerHTML = contenuto_precendente + "<li>" + cognomi + "</li>";
+var surname = cognomi.sort();
+
+
+
+
+for (var i = 0; i < surname; i++) {
+    console.log(cognomi[i]);
+
+
+
+}
+
+
+
+
+var msgUscita = document.getElementById('lista').innerHTML;
+//console.log(msgUscita);
+
+//document.getElementById('lista').innerHTML = msgUscita + "<li>" + surname[i] + "</li>";
+document.getElementById('lista').innerHTML = surname;
+
+
+
+
+
+
+//var msgUscita = document.getElementById('lista').innerHTML;
+
+//document.getElementById('lista').innerHTML = msgUscita + "<li>" + cognomi + "</li>";
 
 
 
