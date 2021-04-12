@@ -27,26 +27,27 @@ var cognomi = [
 //chiedere il cognome
 var cognomi = prompt("inserire il vs cognome");
 console.log(cognomi);
-//console.log(cognomi[4]);
-
-var cognomi = [];
+console.log(cognomi[8]);
 
 
 
-cognomi.sort();
+
+
+cognomi.sort(i);
 console.log(cognomi);
 
 var surname = cognomi.sort();
+console.log(surname);
 
 
 
 
-for (var i = 0; i < surname; i++) {
-    console.log(cognomi[i]);
+// for (var i = 0; i < surname; i++) {
+//     console.log(cognomi[i]);
 
 
 
-}
+// }
 
 
 
