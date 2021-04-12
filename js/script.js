@@ -32,3 +32,8 @@ var cognomi = [
 console.log(cognomi);
 surname = cognomi.sort();
 console.log(surname);
+
+var surname = 0;
+console.log(surname.sort);
+
+document.getElementById("exit").innerHTML = cognomi;
