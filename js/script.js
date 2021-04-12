@@ -29,20 +29,25 @@ var cognomi = [
 //var cognomi = prompt("inserire il vs cognome");
 
 
+// var cognomi = 0;
+// console.log(cognomi[numero]);
+
 console.log(cognomi);
 surname = cognomi.sort();
 console.log(surname);
 
 
-console.log(surname.sort);
 
-//document.getElementById("exit").innerHTML = cognomi;
+var contenuto_precendente = document.getElementById('lista').innerHTML;
+
+document.getElementById('lista').innerHTML = contenuto_precendente + "<li>" + cognomi + "</li>";
+
 
 
 // prendo il contenuto dell'ul per aggiungere il nuovo contenuto (non sostituire)
-var contenuto_precendente = document.getElementById('lista').innerHTML;
+//var contenuto_precendente = document.getElementById('lista').innerHTML;
 //console.log(contenuto_precendente);
 
 //srivo nell'ul la vecchia lista con l'aggiunta del nuovo elemento
-document.getElementById('lista').innerHTML = cognomi + "<li>" + elemento_lista + "</li>";
+//document.getElementById('lista').innerHTML = cognomi + "<li>" + elemento_lista + "</li>";
 //console.log("HO SCRITTO L'ELEMENTO CON INDICE: "+i)
