@@ -21,25 +21,59 @@ var cognomi = [
     "bianchi",
     "verdi",
     "balestreri",
-
 ];
 
-//chiedere il cognome
-var cognomi = prompt("inserire il vs cognome");
-console.log(cognomi);
-console.log(cognomi[8]);
+//Stampiamo tutti i cognomi in pagina 
+for (var i = 0; i < cognomi.length; i++) {
+    var cognomeCorrente = cognomi[i];
+    console.log("elemento corrente dentro il for", cognomeCorrente)
+
+    //Stampo ciascun cognome nella lista
+    var contenutoPrecedente = document.getElementById('lista-non-ordinata').innerHTML;
+    document.getElementById('lista-non-ordinata').innerHTML = contenutoPrecedente + "<li>" + cognomeCorrente + "</li>";
+}
+
+//Ordiniamo alfabeticamente l'array 
+cognomi.sort();
+
+//Stampiamo tutti i cognomi in pagina 
+for (var i = 0; i < cognomi.length; i++) {
+    var cognomeCorrente = cognomi[i];
+    console.log("elemento corrente dentro il for", cognomeCorrente)
+
+    //Stampo ciascun cognome nella lista
+    var contenutoPrecedente = document.getElementById('lista-ordinata').innerHTML;
+    document.getElementById('lista-ordinata').innerHTML = contenutoPrecedente + "<li>" + cognomeCorrente + "</li>";
+}
+
+
+
+//correzione esercizio 
+
+//creo la lista
+
+var cognomiList = ["ciancio", "tommasi", "balestreri"];
+
+//var cognomeUtente = pront("inserisci il cognome");
+
+var cognomeUtente = "de ughi";
+
+//aggiungo il cogonme alla lista
+cognomiList.push(cognomeUtente);
+
+var cognomiSorted = cognomiList.slice(); //per memorizzare e non perdere i contenuti ho coiato tutto su cognomiSorted
+
+console.log(cognomiSorted);
 
 
 
 
 
-cognomi.sort(i);
-console.log(cognomi);
-
-var surname = cognomi.sort();
-console.log(surname);
 
 
+
+
+// prove fatte
 
 
 // for (var i = 0; i < surname; i++) {
@@ -52,11 +86,11 @@ console.log(surname);
 
 
 
-var msgUscita = document.getElementById('lista').innerHTML;
+//var msgUscita = document.getElementById('lista').innerHTML;
 //console.log(msgUscita);
 
 //document.getElementById('lista').innerHTML = msgUscita + "<li>" + surname[i] + "</li>";
-document.getElementById('lista').innerHTML = surname;
+//document.getElementById('lista').innerHTML = surname;
 
 
 
