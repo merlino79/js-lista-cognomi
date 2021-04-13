@@ -52,11 +52,11 @@ for (var i = 0; i < cognomi.length; i++) {
 
 //creo la lista
 
-var cognomiList = ["ciancio", "tommasi", "balestreri"];
+var cognomiList = ["ciancio", "tommasi", "balestreri", "de ughi", ];
 
 //var cognomeUtente = pront("inserisci il cognome");
 
-var cognomeUtente = "de ughi";
+var cognomeUtente = "ciancio";
 
 //aggiungo il cogonme alla lista
 cognomiList.push(cognomeUtente);
@@ -64,6 +64,38 @@ cognomiList.push(cognomeUtente);
 var cognomiSorted = cognomiList.slice(); //per memorizzare e non perdere i contenuti ho coiato tutto su cognomiSorted
 
 console.log(cognomiSorted);
+console.log(cognomiList); // verifica 
+
+
+//flag per il ciclo while
+var cognome_trovato = false;
+
+var counter = 0;
+
+//cerco il cognome fino a che il flag e true
+
+while (!cognome_trovato) {
+    var cognome = cognomiSorted[counter]; //l'eggo l'array
+    console.log(cognomiSorted);
+
+    //quando trovo il cognome interrompo il ciclo 
+    if (cognome_trovato === cognomeUtente) {
+        cognome_trovato = true;
+        console.log("trovato" + counter);
+        counter++;
+
+    }
+
+
+
+
+
+}
+
+
+
+
+
 
 
 
