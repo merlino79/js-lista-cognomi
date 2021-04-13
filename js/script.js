@@ -72,6 +72,8 @@ var cognome_trovato = false;
 
 var counter = 0;
 
+var posUtente;
+
 //cerco il cognome fino a che il flag e true
 
 while (!cognome_trovato) {
@@ -79,17 +81,33 @@ while (!cognome_trovato) {
     console.log(cognomiSorted);
 
     //quando trovo il cognome interrompo il ciclo 
-    if (cognome_trovato === cognomeUtente) {
+    if (cognome === cognomeUtente) {
         cognome_trovato = true;
+        posUtente = counter + 1;
         console.log("trovato" + counter);
-        counter++;
+        console.log("sei in " + (counter + 1) + "posizione");
+
 
     }
+    counter++;
 
 
 
 
 
+}
+
+//salvi il contenitore di una lista in una variabile
+
+var containerLista = document.getElementById("exit");
+console.log(containerLista);
+
+//stampo tutta la lista
+
+for (var i = 0; i < cognomiSorted.length; i++) {
+    var cognomelista = cognomiSorted[i];
+    console.log(cognomelista)
+    containerLista.innerHTML += "<li>" + cognomelista + "</li>";
 }
 
 
