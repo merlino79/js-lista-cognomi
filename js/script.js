@@ -54,9 +54,9 @@ for (var i = 0; i < cognomi.length; i++) {
 
 var cognomiList = ["ciancio", "tommasi", "balestreri", "de ughi", ];
 
-//var cognomeUtente = pront("inserisci il cognome");
 
-var cognomeUtente = "ciancio";
+
+var cognomeUtente = prompt("cognome");
 
 //aggiungo il cogonme alla lista
 cognomiList.push(cognomeUtente);
@@ -109,6 +109,8 @@ for (var i = 0; i < cognomiSorted.length; i++) {
     console.log(cognomelista)
     containerLista.innerHTML += "<li>" + cognomelista + "</li>";
 }
+
+document.getElementById("posizione").innerHTML = cognomeUtente + " è in posizione " + posUtente;
 
 
 
